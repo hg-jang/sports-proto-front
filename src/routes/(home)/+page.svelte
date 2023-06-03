@@ -3,5 +3,5 @@
 </script>
 
 <h1>
-	hello svelte
+	It's Home page
 </h1>
