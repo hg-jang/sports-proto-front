@@ -10,11 +10,27 @@
 					Logo
 				</span>
 			</a>
-			<ul class="flex m-0 p-0 list-none leading-[100%]">
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">Home</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">Menu 1</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">Menu 2</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">Log In</li>
+			<ul class="flex m-0 p-0 list-none">
+				<li class="p-4 hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="text-inherit">
+						Home
+					</a>
+				</li>
+				<li class="p-4 hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="text-inherit">
+						Menu 1
+					</a>
+				</li>
+				<li class="p-4 hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="text-inherit">
+						Menu 2
+					</a>
+				</li>
+				<li class="p-4 hover:bg-orange-300 cursor-pointer">
+					<a href="/login" class="text-inherit">
+						Log In
+					</a>
+				</li>
 			</ul>
 		</div>
 	</nav>
