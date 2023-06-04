@@ -35,13 +35,13 @@
 		<li>
 			<a href="javascript:;" class="flex items-center">
 				<img src={teamIcon} alt="" class="w-[70px] h-[40px] text-[20px] text-center">
-				<span class="ml-[10px]">내 팀</span>
+				<span class="ml-[10px]">내 클럽들</span>
 			</a>
 		</li>
 		<li>
-			<a href="javascript:;" class="flex items-center">
+			<a href="/name/club" class="flex items-center">
 				<span class="flex justify-center itesm-center w-8 h-8 mx-[19px] bg-white text-3xl rounded-full">+</span>
-				<span class="ml-[10px]">새로운 팀</span>
+				<span class="ml-[10px]">새로운 클럽</span>
 			</a>
 		</li>
 	</ul>
