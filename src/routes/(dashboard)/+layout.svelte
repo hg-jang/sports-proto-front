@@ -1,4 +1,68 @@
-<div class="dashboard">
-	<h1>It's dashboard layout</h1>
+<script>
+  import forumIcon from '~/lib/icons/forum_black_24dp.svg'  
+  import rankIcon from '~/lib/icons/leaderboard_black_24dp.svg'  
+  import teamIcon from '~/lib/icons/groups_black_24dp.svg'  
+
+	import logo from '~/lib/images/test.png'
+</script>
+
+<nav class="absolute top-0 bottom-0 left-0 z-50 h-full w-[90px] bg-violet-300 overflow-hidden">
+	<ul class="m-0 p-0">
+		<!-- logo -->
+		<li>
+			<a href="/name" class="logo flex items-center">
+				<img src={logo} alt="" class="w-[45px] h-[45px] rounded-full">
+				<span class="pl-[15px] ml-[10px] text-[18px]">Name</span>
+			</a>
+		</li>
+
+		<!-- dashboard menus -->
+		<li>
+			<a href="/name" class="flex items-center">
+				<img src={forumIcon} alt="" class="w-[70px] h-[40px] text-[20px] text-center">
+				<span class="ml-[10px]">포럼</span>
+			</a>
+		</li>
+		<li>
+			<a href="/name" class="flex items-center">
+				<img src={rankIcon} alt="" class="w-[70px] h-[40px] text-[20px] text-center">
+				<span class="ml-[10px]">랭크</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="dashboard absolute left-[90px] right-0 top-0 bottom-0 p-4">
 	<slot />
 </div>
+
+<style>
+	nav {
+		/* width: 280px; */
+		transition: width 0.2s linear;
+		box-shadow: 0 20px 35px rgba(0, 0, 0, .1);
+	}
+
+	nav:hover {
+		width: 280px;
+		transition: all 0.5s ease;
+	}
+
+	a {
+		width: 300px;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	a:hover {
+		background-color: #eee;
+	}
+
+	.logo {
+		display: flex;
+		margin: 10px 0 0 10px;
+		transition: all .5s ease;
+		text-align: center;
+	}
+
+</style>
