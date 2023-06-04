@@ -3,7 +3,7 @@
 	
 	import { user } from '~/lib/stores/store';
 
-	import type { User } from '~/lib/mock/data/user';
+	import type { User } from '~/lib/mock/data';
 
 	let me: User;
 	

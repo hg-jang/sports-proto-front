@@ -1,5 +1,5 @@
-import { USERS } from '~/lib/mock/data/user'
-import type { User } from '~/lib/mock/data/user'
+import { USERS } from '~/lib/mock/data'
+import type { User } from '~/lib/mock/data'
 
 export function LOG_IN(email: string, password: string) {
   
