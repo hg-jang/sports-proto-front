@@ -42,7 +42,7 @@
 					</li>
 				{:else}
 					<li class="hover:bg-orange-300 cursor-pointer">
-						<a href="/login" class="block p-4 text-inherit">
+						<a href="/name" class="block p-4 text-inherit">
 							{me.name}
 						</a>
 					</li>
