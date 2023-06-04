@@ -1,0 +1,1 @@
+<h1>Rank page</h1>

@@ -1,0 +1,1 @@
+<h1>Forum page</h1>

@@ -18,13 +18,13 @@
 
 		<!-- dashboard menus -->
 		<li>
-			<a href="/name" class="flex items-center">
+			<a href="/name/forum" class="flex items-center">
 				<img src={forumIcon} alt="" class="w-[70px] h-[40px] text-[20px] text-center">
 				<span class="ml-[10px]">포럼</span>
 			</a>
 		</li>
 		<li>
-			<a href="/name" class="flex items-center">
+			<a href="/name/rank" class="flex items-center">
 				<img src={rankIcon} alt="" class="w-[70px] h-[40px] text-[20px] text-center">
 				<span class="ml-[10px]">랭크</span>
 			</a>
