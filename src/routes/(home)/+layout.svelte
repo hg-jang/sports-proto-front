@@ -1,5 +1,13 @@
-<script>
-	import './home-layout.css'
+<script lang="ts">
+	import './home-layout.css';
+	
+	import { user } from '~/lib/stores/store';
+
+	import type { User } from '~/lib/mock/data/user';
+
+	let me: User;
+	
+	user.subscribe((u) => me = u)
 </script>
 
 <div class="home">
@@ -11,26 +19,34 @@
 				</span>
 			</a>
 			<ul class="flex m-0 p-0 list-none">
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">
-					<a href="/" class="text-inherit">
+				<li class="hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="block p-4 text-inherit">
 						Home
 					</a>
 				</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">
-					<a href="/" class="text-inherit">
+				<li class="hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="block p-4 text-inherit">
 						Menu 1
 					</a>
 				</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">
-					<a href="/" class="text-inherit">
+				<li class="hover:bg-orange-300 cursor-pointer">
+					<a href="/" class="block p-4 text-inherit">
 						Menu 2
 					</a>
 				</li>
-				<li class="p-4 hover:bg-orange-300 cursor-pointer">
-					<a href="/login" class="text-inherit">
-						Log In
-					</a>
-				</li>
+				{#if !me}
+					<li class="hover:bg-orange-300 cursor-pointer">
+						<a href="/login" class="block p-4 text-inherit">
+							Log In
+						</a>
+					</li>
+				{:else}
+					<li class="hover:bg-orange-300 cursor-pointer">
+						<a href="/login" class="block p-4 text-inherit">
+							{me.name}
+						</a>
+					</li>
+				{/if}
 			</ul>
 		</div>
 	</nav>
