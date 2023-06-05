@@ -48,9 +48,6 @@
 </nav>
 
 <div class="dashboard flex flex-col p-4 ml-[90px] h-screen">
-	
-	<slot name="subMenus" />
-
 	<slot />
 </div>
 

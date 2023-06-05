@@ -1,6 +1,6 @@
 <script lang="ts">
   import FilledButton from '~/components/buttons/filled-button.svelte';
-    import type { SubMenu } from '~/lib/mock/data';
+  import type { SubMenu } from '~/lib/mock/data';
 
   export let subMenuGroups: SubMenu[][]
 </script>

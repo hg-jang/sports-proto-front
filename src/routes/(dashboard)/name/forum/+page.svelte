@@ -1,5 +1,7 @@
 <script lang="ts">
   import DashboardSubMenu from "~/components/navs/dashboard-sub-menu.svelte";
+	import DashboardLayout from "~/components/custom-layouts/dashboard-layout.svelte";
+
   import type { SubMenu } from "~/lib/mock/data";
 
   const subMenuGroups: SubMenu[][] = [
@@ -27,6 +29,10 @@
 	]
 </script>
 
-<DashboardSubMenu slot='subMenus' subMenuGroups={subMenuGroups} />
-
-<h1>Forum page</h1>
+<DashboardLayout>
+	<DashboardSubMenu slot='subMenus' subMenuGroups={subMenuGroups} />
+	
+	<div slot="content">
+		<h1>Forum page</h1>
+	</div>
+</DashboardLayout>
