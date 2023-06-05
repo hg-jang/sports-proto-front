@@ -4,35 +4,15 @@
   export let subMenuGroups: {
     text: string
     path: string
-    color: string
+    color: "primary" | "secondary" | "success" | "error"
   }[][]
-
-  // const subMenuGroups = [
-	// 	[
-	// 		{
-	// 			text: '자유게시판',
-	// 			path: '/board',
-	// 		}, {
-	// 			text: 'Q & A',
-	// 			path: '/question',
-	// 		}
-	// 	], [
-	// 		{
-	// 			text: '자유게시판',
-	// 			path: '/board',
-	// 		}, {
-	// 			text: 'Q & A',
-	// 			path: '/question',
-	// 		}
-	// 	]
-	// ]
 </script>
 
 <div class="flex gap-4">
   {#each subMenuGroups as subMenuGroup, idx}
     <div class="flex gap-2">
       {#each subMenuGroup as subMenu}
-        <FilledButton color='primary' text={subMenu.text} size='xs' />
+        <FilledButton color={subMenu.color} text={subMenu.text} size='xs' />
       {/each}
     </div>
 
