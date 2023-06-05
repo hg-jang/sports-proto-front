@@ -1,7 +1,7 @@
 <script>
-  import forumIcon from '~/lib/icons/forum_black_24dp.svg'  
-  import rankIcon from '~/lib/icons/leaderboard_black_24dp.svg'  
-  import teamIcon from '~/lib/icons/groups_black_24dp.svg'  
+  import forumIcon from '~/lib/icons/forum_black_24dp.svg'
+  import rankIcon from '~/lib/icons/leaderboard_black_24dp.svg'
+  import teamIcon from '~/lib/icons/groups_black_24dp.svg'
 
 	import logo from '~/lib/images/test.png'
 </script>
@@ -47,7 +47,10 @@
 	</ul>
 </nav>
 
-<div class="dashboard absolute left-[90px] right-0 top-0 bottom-0 p-4">
+<div class="dashboard flex flex-col p-4 ml-[90px] h-screen">
+	
+	<slot name="subMenus" />
+
 	<slot />
 </div>
 
