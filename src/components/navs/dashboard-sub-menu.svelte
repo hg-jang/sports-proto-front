@@ -1,18 +1,15 @@
 <script lang="ts">
   import FilledButton from '~/components/buttons/filled-button.svelte';
+    import type { SubMenu } from '~/lib/mock/data';
 
-  export let subMenuGroups: {
-    text: string
-    path: string
-    color: "primary" | "secondary" | "success" | "error"
-  }[][]
+  export let subMenuGroups: SubMenu[][]
 </script>
 
 <div class="flex gap-4">
   {#each subMenuGroups as subMenuGroup, idx}
     <div class="flex gap-2">
       {#each subMenuGroup as subMenu}
-        <FilledButton color={subMenu.color} text={subMenu.text} size='xs' />
+        <FilledButton color={subMenu.color} text={subMenu.menu} size='xs' />
       {/each}
     </div>
 

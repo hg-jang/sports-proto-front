@@ -1,24 +1,25 @@
-<script>
+<script lang="ts">
   import DashboardSubMenu from "~/components/navs/dashboard-sub-menu.svelte";
+  import type { SubMenu } from "~/lib/mock/data";
 
-  const subMenuGroups = [
+  const subMenuGroups: SubMenu[][] = [
 		[
 			{
-				text: '자유게시판',
+				menu: '자유게시판',
 				path: '/board',
         color: 'primary',
 			}, {
-				text: 'Q & A',
+				menu: 'Q & A',
 				path: '/question',
         color: 'primary',
 			}
 		], [
 			{
-				text: '자유게시판',
+				menu: '자유게시판',
 				path: '/board',
         color: 'primary',
 			}, {
-				text: 'Q & A',
+				menu: 'Q & A',
 				path: '/question',
         color: 'primary',
 			}

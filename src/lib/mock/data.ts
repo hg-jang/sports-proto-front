@@ -69,3 +69,22 @@ export const CLUBS: Club[] = [
     members: [1, 2]
   }
 ]
+
+// 
+
+/**
+ * 대쉬보드 서브 메뉴
+ */
+export type SubMenu = {
+  menu: string
+  path: string
+  color: BUTTON_TYPE
+}
+
+const BUTTON_TYPE = {
+  PRIMARY: 'primary',
+  SECONDARY: 'secondary',
+  SUCCESS: 'success',
+  ERROR: 'error',
+} as const
+type BUTTON_TYPE = typeof BUTTON_TYPE[keyof typeof BUTTON_TYPE]
