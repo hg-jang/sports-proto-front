@@ -14,11 +14,11 @@
     [
       {
         menu: '클럽 가입',
-        path: '',
+        path: '/club',
         color: 'primary',
       }, {
         menu: '클럽 생성',
-        path: '/create',
+        path: '/club/new',
         color: 'primary',
       }
     ]
