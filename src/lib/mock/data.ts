@@ -14,6 +14,8 @@ export type Club = {
   
   description: string
 
+  tags: string[]
+  
   /** 클럽 공개(검색 허용) */
   public: boolean
 
@@ -53,6 +55,7 @@ export const CLUBS: Club[] = [
     id: 1,
     name: '상도동 흑염룡들',
     description: '우리는 상도동의 흑염룡을 각자의 오른팔에 봉인하여 수호하고 있다.',
+    tags: ['용사', '전설', '상도동'],
     public: true,
     join_type: 'Anyone',
     master: 1,
@@ -62,6 +65,7 @@ export const CLUBS: Club[] = [
     id: 2,
     name: 'Club KOREA',
     description: '자랑스런 한국인들(애국 보수 아님).',
+    tags: ['한국', 'KOREA', '2030'],
     public: true,
     join_type: 'Allowed',
     master: 2,
