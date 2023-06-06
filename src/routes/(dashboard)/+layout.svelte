@@ -47,7 +47,7 @@
 	</ul>
 </nav>
 
-<div class="dashboard flex flex-col gap-4 p-4 ml-[90px] h-screen">
+<div class="dashboard flex flex-col gap-4 p-4 ml-[90px] h-screen dark:bg-slate-100">
 	<slot />
 </div>
 
