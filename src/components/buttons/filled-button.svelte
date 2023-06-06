@@ -1,7 +1,14 @@
 <script lang="ts">
+  /** 버튼 글자 */
   export let text: string;
+  
+  /** 버튼 색상  */
   export let color: 'primary' | 'secondary' | 'success' | 'error';
+ 
+  /** 글자 크기 */
   export let size: 'xs' | 'sm' | 'base' | 'lg' = 'sm'
+
+  export let handler: (...params: any) => any;
 
   let bgColor: string = 'purple';
 
@@ -31,6 +38,7 @@
     focus:outline-none hover:bg-{bgColor}-700 focus:ring-4 focus:ring-{bgColor}-300
     dark:bg-{bgColor}-600 dark:hover:bg-{bgColor}-700 dark:focus:ring-{bgColor}-900
   "
+  on:click={handler}
 >
   {text}
 </button>
