@@ -5,6 +5,7 @@ export type User = {
   name: string
   sex: 'M' | 'F'
   profile_url: string
+  clubs: number[]
 }
 
 export type Club = {
@@ -40,6 +41,7 @@ export const USERS: User[] = [
     name: 'Gooldan',
     sex: 'M',
     profile_url: '',
+    clubs: [1, 2],
   }, {
     id: 2,
     email: 'apple@gmail.com',
@@ -47,6 +49,7 @@ export const USERS: User[] = [
     name: 'Iphone23',
     sex: 'F',
     profile_url: '',
+    clubs: [1, 2],
   }
 ]
 
