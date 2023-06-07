@@ -11,8 +11,7 @@ export default {
   safelist: [
     'text-xs', 'text-sm', 'text-base', 'text-lg',
     {
-      pattern: /bg-(red|green|blue|purple)-(100|200|300|400|500|600|700|800|900)/,
-      variants: ['lg', 'hover', 'focus', 'lg:hover'],
+      pattern: /(bg|text|border)-./,
     },
   ],
 }
