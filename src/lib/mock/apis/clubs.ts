@@ -28,7 +28,14 @@ export function GET_CLUB_BY_ID(clubId: number) {
  */
 export function GET_MY_CLUBS(userId: number) {
   return new Promise<Pick<Club, 'id' | 'name'>[]>((resolve, reject) => {
-    const clubs = CLUBS.filter((c) => c.members.includes(userId))
+    const clubs = CLUBS.filter((c) => {
+      if(c.members.includes(userId)) {
+        return {
+          id: c.id,
+          name: c.name,
+        }
+      }
+    })
     if(clubs) {
       resolve(clubs)
     } else {
