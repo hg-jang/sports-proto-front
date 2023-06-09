@@ -8,8 +8,6 @@
   import type { LayoutData } from "./$types"
 
   export let data: LayoutData;
-
-  console.log('data::::', data)
 </script>
 
 <nav
@@ -58,15 +56,25 @@
         <span class="ml-[10px]">내 클럽들</span>
       </a>
     </li>
-    <!-- {#each data.myClubs as myClub}
-
-    {/each} -->
+    {#each data.myClubs as myClub}
+      <li>
+        <a href="/name/club/{myClub.id}" class="flex items-center">
+          <span
+            class="flex justify-center itesm-center w-8 h-8 mx-[19px] bg-white text-xl rounded-full"
+          >
+            {myClub.name[0]}
+          </span>
+          <span class="ml-[10px]">{myClub.name}</span>
+        </a>
+      </li>
+    {/each}
     <li>
       <a href="/name/club" class="flex items-center">
         <span
           class="flex justify-center itesm-center w-8 h-8 mx-[19px] bg-white text-3xl rounded-full"
-          >+</span
         >
+          +
+        </span>
         <span class="ml-[10px]">새로운 클럽</span>
       </a>
     </li>
